@@ -1,0 +1,14 @@
+form {
+  background-color: #00AA00;
+  font-size: 20px;
+  text-align: center;
+}
+h1{
+  color: #00FF00;
+  font-family: verdana;
+  text-align: center;
+}
+form p {
+  color: solid black;
+  size: 12px;
+}
