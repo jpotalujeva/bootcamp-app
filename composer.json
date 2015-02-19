@@ -1,0 +1,23 @@
+{
+    "name": "vagrant/bootcamp-app",
+    "require": {
+        "monolog/monolog": "~1.0",
+        "silex/silex": "~1.0"
+    },
+    "require-dev" : {
+      "phpunit/phpunit" : "~4.4"
+    },
+    "authors": [
+        {
+            "name": "Jevgenija Potalujeva",
+            "email": "jpotalujeva@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Bootcamp\\Demo\\": "classes/"
+         }
+    }
+
+
+}
