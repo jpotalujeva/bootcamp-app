@@ -1,9 +1,9 @@
 <?php
 
-include Bootcamp\Demo\Shape;
-include Bootcamp\Demo\Circle;
-include Bootcamp\Demo\Rectangle;
-include Bootcamp\Demo\Cilinder;
+use Bootcamp\Demo\Shape;
+use Bootcamp\Demo\Circle;
+use Bootcamp\Demo\Rectangle;
+use Bootcamp\Demo\Cilinder;
 
 
 require('classes/Shape.php');
