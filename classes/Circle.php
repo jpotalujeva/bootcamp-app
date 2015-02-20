@@ -1,6 +1,6 @@
 <?php
 
-namespace Bootcamp\Demo\Circle
+namespace Bootcamp\Demo;
 
 class Circle extends Shape {
   public $radius;

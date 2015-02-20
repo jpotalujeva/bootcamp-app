@@ -1,5 +1,7 @@
 <?php
 
+namespace Bootcamp\Demo;
+
 class Cilinder extends Circle{
   public $height;
   public function __construct($radius, $height) {
