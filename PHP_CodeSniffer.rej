@@ -1,0 +1,18 @@
+--- classes/Cilinder.php
++++ PHP_CodeSniffer
+@@ -7,12 +7,12 @@
+     public $height;
+     public function __construct($radius, $height)
+     {
+-    $this->height=$height;
+-    parent:: __construct($radius);
++        $this->height=$height;
++        parent:: __construct($radius);
+     }
+ 
+     public function getArea()
+     {
+-    return (2 * pi() * $this->height) + (2 * pi() * ($this->radius**2));
++        return (2 * pi() * $this->height) + (2 * pi() * ($this->radius**2));
+     }
+ }
