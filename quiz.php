@@ -20,7 +20,6 @@ $questions[] = new Questions('what?');
 
 $quizes = [];
 $quizes[] = new Quiz('my Quiz');
-$quizes[] = new Quiz('my second Quiz');
 
     foreach($quizes as $key => $quiz)
     {
@@ -30,5 +29,16 @@ $quizes[] = new Quiz('my second Quiz');
     {
         $question->addOption($options);
     }
+    // foreach($options as $key => $option)
+    // {
+    //     if($isCorrect = true)
+    //     {
+    //         echo "Correct";
+    //     } else {
+    //         echo "Not Correct";
+    //     }
+    // }
 
-var_dump($quiz);
+
+
+var_dump($options);

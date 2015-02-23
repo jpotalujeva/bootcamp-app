@@ -14,8 +14,13 @@ class Options
     protected $isCorrect;
     protected $option;
 
-    public function __construct($isCorrect = 'false')
+    public function __construct($option, $isCorrect = false)
     {
+        $this->option = $option;
         $this->isCorrect = $isCorrect;
+    }
+    public function AnswerCount($option)
+    {
+        $this->option = $option;
     }
 }

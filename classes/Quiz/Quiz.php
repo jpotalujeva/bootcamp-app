@@ -17,8 +17,4 @@ class Quiz
     {
         $this->question = $question;
     }
-    public function addOption($options)
-    {
-        $this->options = $options;
-    }
 }
