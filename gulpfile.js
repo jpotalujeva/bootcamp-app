@@ -3,19 +3,19 @@ var phpunit = require('gulp-phpunit');
 //var phpcs = require('gulp-phpcs');
 var less = require('gulp-less');
 var path = require('path');
-var browserify = require('browerify');
+var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
 
 
-
-// gulp.task('phpunit', function() {
-//     var options = {debug: false};
-//     gulp.src('phpunit.xml').pipe(phpunit('./vendor/bin/phpunit',options)).on('error', function(){
-//         console.log('Failed');
-//     });
+gulp.task('phpunit', function() {
+    var options = {debug: false};
+    gulp.src('phpunit.xml').pipe(phpunit('./vendor/bin/phpunit',options)).on('error', function(){
+        console.log('Failed');
+    })
+});
 
 gulp.task('less', function () {
   return gulp.src('.resources/assets/less/app.less')
@@ -25,14 +25,13 @@ gulp.task('less', function () {
         .pipe(gulp.dest('./public/css'));
     });
 
-    gulp.task('javascript', function() {
-
-      var bundler = browserify({
-        entries: ['resourses/assets/less/js/app.js'],
+gulp.task('javascript', function() {
+    var bundler = browserify({
+        entries: ['./resourses/assets/js/app.js'],
         debug: true
-      });
+        });
 
-      var bundle = function() {
+    var bundle = function() {
         return bundler
           .bundle()
           .pipe(source('app.js'))
@@ -45,7 +44,6 @@ gulp.task('less', function () {
 
       return bundle();
     });
-//});
 // gulp.task('phpcs', function(){
 //     require gulp.src('classes/**/*.php').({
 //         bin:'./vendor/bin/phpcs';
