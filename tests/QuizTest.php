@@ -7,6 +7,6 @@ class QuizTest extends PHPUnit_Framework_TestCase
     public function testAddQuestion()
     {
         $quiz = new Quiz();
-        $this->assertEquals($quiz->addQuestion('WTF?'));
+        $this->assertEquals('WTF?',$quiz->addQuestion('WTF?'));
     }
 }
